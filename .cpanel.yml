@@ -1,0 +1,11 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/carlgruh/public_html/
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp README.md $DEPLOYPATH
+ - /bin/cp -R img $DEPLOYPATH
+ - /bin/cp -R css $DEPLOYPATH
+ - /bin/cp -R js $DEPLOYPATH
+ - /bin/cp -R static $DEPLOYPATH
+ - /bin/cp -R fonts $DEPLOYPATH
